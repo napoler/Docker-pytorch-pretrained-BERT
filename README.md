@@ -1,2 +1,15 @@
 # Docker-pytorch-pretrained-BERT
 Docker for pytorch-pretrained-BERT
+
+## 打包镜象
+docker build -t napoler/pytorch-pretrained-bert ./
+
+
+## 正常执行
+docker run -d --name mybert -v /home/terry/github/aihelp/:/myapp -p 5003:5000 -it napoler/pytorch-pretrained-bert  bash
+
+
+docker start mybert
+
+## 进入容器
+docker exec -t -i mybert  bash
