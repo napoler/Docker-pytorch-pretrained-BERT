@@ -15,8 +15,8 @@ RUN ed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list &&
      echo "FLASK_ENV=development">>/etc/environment && \
      #pip3没人安装库已经添加--no-cache-dir本地不产生缓存
     #pip3 --no-cache-dir install numpy scipy pandas matplotlib pipreqs pyaudio
-    python3 -m pip3 install --upgrade pip
-    python3 -m pip3 install jupyter
+    python3 -m pip install --upgrade pip
+    python3 -m pip install jupyter
     git clone https://gitee.com/terrychan/apex.git && cd apex && python setup.py install --cuda_ext --cpp_ext
     pip install git+https://github.com/huggingface/pytorch-pretrained-BERT.git
 # https://gitee.com/terrychan/pytorch-pretrained-BERT.git

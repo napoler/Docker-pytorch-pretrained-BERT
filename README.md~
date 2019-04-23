@@ -6,10 +6,12 @@ docker build -t napoler/docker-pytorch-pretrained-bert ./
 
 
 ## 正常执行
+docker run -d --name mybert -v /home/terry/github/aihelp/:/myapp -p 5003:5000 -it napoler/pytorch-pretrained-bert  bash
+
 
 
 docker run -d --name mybert -v /home/terry/github/bert-cn/:/workspace -p 5003:5000 -it napoler/docker-pytorch-pretrained-bert  bash
-## 启动
+
 docker start mybert
 
 ## 进入容器
