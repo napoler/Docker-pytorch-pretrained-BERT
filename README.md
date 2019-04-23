@@ -2,7 +2,7 @@
 Docker for pytorch-pretrained-BERT
 
 ## 打包镜象
-docker build -t napoler/pytorch-pretrained-bert ./
+docker build -t napoler/docker-pytorch-pretrained-bert ./
 
 
 ## 正常执行
