@@ -14,3 +14,11 @@ docker start mybert
 
 ## 进入容器
 docker exec -t -i mybert  bash
+
+
+
+jupyter notebook
+# 设置密码
+jupyter notebook password 
+#启动jupyter
+jupyter notebook --ip=0.0.0.0 --port=5000  --allow-root

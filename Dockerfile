@@ -1,5 +1,5 @@
 FROM pytorch/pytorch:1.0.1-cuda10.0-cudnn7-devel
-
+ENV LANG C.UTF-8
 # RUN
 
     #pip3设置国内镜像
